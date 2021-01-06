@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: jsdockertest
+    name: js-docker-test
 spec:
-    type: LoadBalancer
+    type: ClusterIP
     ports:
     - port: 8080 
     selector:
-        app: jsdockertest
+        app: js-docker-test

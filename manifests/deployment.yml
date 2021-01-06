@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: jsdockertest 
+  name: js-docker-test 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jsdockertest
+      app: js-docker-test
   template:
     metadata:
       labels:
-        app: jsdockertest 
+        app: js-docker-test 
     spec:
       containers:
-        - name: jsdockertest 
-          image: gammondev.azurecr.io/jsdockertest
+        - name: js-docker-test 
+          image: gammondev.azurecr.io/js-docker-test
           ports:
           - containerPort: 8080
