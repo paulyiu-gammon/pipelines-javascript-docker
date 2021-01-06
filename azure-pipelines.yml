@@ -45,8 +45,3 @@ stages:
           
     - upload: manifests
       artifact: manifests
-- task: ContainerBuild@0
-  inputs:
-    dockerRegistryServiceConnection: 'gammondev'
-    repository: 'erp-lab/js-docker-test'
-    Dockerfile: 'Dockerfile'
