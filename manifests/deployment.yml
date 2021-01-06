@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: js-docker-test 
-          image: gammondev.azurecr.io/js-docker-test
+          image: gammondev.azurecr.io/erp-lab/js-docker-test
           ports:
           - containerPort: 8080
